@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import * as TYPE from '../../_constant'
-import ImgLazy from '../render/Images'
 import { StateImagesTypes, ImagesTypes } from '../../_interface'
+const ImgLazy = React.lazy((): any => import('../render/Images'))
 
 interface Props {
   images: StateImagesTypes
