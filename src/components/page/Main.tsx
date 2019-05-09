@@ -2,7 +2,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import * as TYPE from '../../_constant'
 import ImgLazy from '../render/Images'
-import { StateImagesTypes } from '../../_interface'
+import { StateImagesTypes, ImagesTypes } from '../../_interface'
 
 interface Props {
   images: StateImagesTypes
@@ -27,7 +27,7 @@ const Main: React.FunctionComponent<Props> = (props: Props) => {
       </button>
       <div className="list-image">
         <React.Suspense fallback={<div>Loading Component…</div>}>
-          {props.images.data.map((img: any, i: number) => (
+          {props.images.data.map((img: ImagesTypes, i: number) => (
             <span key={i} draggable={true} onDrag={e => handlDrag(e)}>
               {<ImgLazy img={img} key={img.id} />}
             </span>

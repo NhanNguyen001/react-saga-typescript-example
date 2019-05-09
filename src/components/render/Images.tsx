@@ -1,6 +1,9 @@
 import * as React from 'react'
-
-export default (props: any) => {
+import { ImagesTypes } from '../../_interface'
+interface Props {
+  img: ImagesTypes
+}
+export default (props: Props) => {
   const { img } = props
   return (
     <img
