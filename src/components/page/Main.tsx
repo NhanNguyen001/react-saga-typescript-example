@@ -15,14 +15,16 @@ interface MapDispatchFunc {
   (params: { type: typeof TYPE.FETCH_IMAGES }): void
 }
 
-const Main: React.FunctionComponent<any> = (props: Props) => {
+const Main: React.FunctionComponent<Props> = (props: Props) => {
   function handlDrag(e: any) {
     console.log(`clientX: ${e.clientX}, clientY: ${e.clientY}`)
   }
   return (
     <div className="App">
       <h1>Redux Saga using typeScript basic syntax </h1>
-      <button onClick={() => props.fetchImage()}>Add Image</button>
+      <button className="btn btn-primary" onClick={() => props.fetchImage()}>
+        Add Image
+      </button>
       <div className="list-image">
         <React.Suspense fallback={<div>Loading Component…</div>}>
           {props.images.data.map((img: any, i: number) => (
