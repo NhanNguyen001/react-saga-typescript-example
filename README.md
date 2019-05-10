@@ -4,6 +4,7 @@
 ```
 nguồn từ project sử dụng javascript es6 của Đạt Mai: https://codesandbox.io/s/24py12x100?fbclid=IwAR1Wjua06Kuw_uIAxv4j0TBhgm0U7CnH0eygSfsI3KJJDPazZ0IUz_diQdw
 Đã cover qua typescript và giảm độ hack não code của em nó =))
+vue project typescript: https://github.com/dongnguyenvie/vue-typescript-example
 ```
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
